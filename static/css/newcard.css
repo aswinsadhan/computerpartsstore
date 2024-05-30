@@ -1,0 +1,116 @@
+.payment-main-container {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.payment-container {
+    min-height: 60%;
+    width: 70%;
+    margin: 50px 0;
+    margin-top: 100px;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.15);
+    border-radius: 20px;
+    padding: 50px 80px; 
+}
+.payment-content {
+    width: 100%;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+}
+
+.payment-container .payment-header {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.payment-header p {
+    text-align: right;
+    font-size: 20px;
+}
+input {
+    width: 300px;
+}
+.form-row > div {
+    margin-right: 10px;
+    width: initial;
+}
+.form-row input {
+    width: 100px;
+}
+
+.card-list {
+    width: 50%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.25);
+    padding: 20px;
+    border-radius: 10px;
+}
+.card-item {
+    border: 1px solid rgba(0,0,0,0.25);
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    margin: 20px 0;
+    display: flex;
+    justify-content:space-between;
+}
+.card-item form {
+    width: 50%;
+}
+.card-item form input {
+    width: 100%;
+}
+
+.card-no {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card-item input[type="submit"] {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .payment-container {
+        width: 98%;
+    }
+    .card-item {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-item form {
+        width: 100%;
+    } 
+}
+@media only screen and (max-width: 768px) {
+    .payment-container {
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+    .payment-content {
+        flex-direction: column-reverse;
+    }
+    .card-list {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .card-details {
+        width: 100%;
+    }
+    .card-details input {
+        width: 100%;
+    }
+    .card-item {
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-item form {
+        width: 100%;
+    } 
+}

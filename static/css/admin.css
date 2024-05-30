@@ -1,0 +1,160 @@
+.top-nav {
+    border: 1px solid #eee;
+    background: white;
+}
+.sidebar {
+    width: 15%;
+    height: 94%;
+    background: #fff;
+    position: fixed;
+    top: 6%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    /*box-shadow: 1px 0px 8px 1px rgba(0,0,0,0.25);*/
+    border-right: 1px solid rgb(0 0 0 / 0.09);
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+a { 
+    text-decoration:none;
+}
+
+.sidebar-header {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: #111;
+    font-size: 20px;
+    margin: 20px 20px;
+}
+.sidebar-item {
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.sidebar-item i {
+    margin-right: 20px;
+
+}
+.sidebar-sub-item {
+    padding: 10px;
+    padding-left: 50px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.sidebar-sub-item i {
+    margin-right: 10px;
+
+}
+.active {
+    background: #470FBC;
+    color:white;
+}
+.active i {
+    color:white;
+}
+.content {
+    width: 85%;
+    margin-left: 15%;
+    padding: 6% 4%;
+    position: absolute;
+}
+.content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 10px 10px;
+    margin-top: 0;
+}
+
+.hamb-line {
+    background: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 8px;
+}
+.hamb-line::after{
+    top: -8px;
+}
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+.hamb {
+    display: none;
+}
+
+
+.admin-heading {
+    display:flex;
+    justify-content:space-between;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+        width: 100%;
+        z-index: 20;
+        position: none;
+    }
+    .hamb {
+        display: block;
+
+    }
+    .top-nav-links {
+        display: none;
+
+    }
+    .content {
+        padding: 5%;
+        margin: 0;
+        width: 100vw;
+        position: relative;
+    }
+    .admin-heading {
+        flex-direction: column;
+    }
+}

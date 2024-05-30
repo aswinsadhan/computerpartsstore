@@ -1,0 +1,29 @@
+.canvas-logo {
+    position: fixed;
+    top: 50%;
+    transform: translate(0%,-50%);
+    right: 5%;
+    z-index: 30;
+    width: 32vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canvas-logo h1 {
+    position: absolute;
+    font-size: 4vw;
+    font-family: 'Bai Jamjuree', sans-serif;
+    /*font-family: 'Courier";*/
+    letter-spacing: -6px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .canvas-logo {
+        display: none;
+    }
+
+}

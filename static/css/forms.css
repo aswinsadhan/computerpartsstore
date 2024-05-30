@@ -1,0 +1,104 @@
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 0;
+    background:#eee;
+    font-family: 'Roboto', sans-serif;
+}
+textarea {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: 0;
+    height: 200px;
+    width: 500px;
+    background:#eee;
+    resize:none;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"] {
+    display: block;
+    background: #470FBC;
+    border-radius: 3px;
+    margin-top: 40px;
+    border:none;
+    color: white;
+    padding: 8px 28px;
+}
+
+input[type="file"] {
+    margin: 0;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    border:none;
+    color: black;
+    background: transparent;
+}
+input[type=file]::file-selector-button {
+    display: block;
+    background: #470FBC;
+    border-radius: 3px;
+    border:none;
+    color: white;
+    margin: 10px 0px;
+    padding: 8px 28px;
+}
+
+form h1 {
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+.error {
+    font-family: 'Roboto', sans-serif;
+    color:#ef476f;
+}
+
+select::-ms-expand {
+  display: none;
+}
+select {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 0.6em 3em 0.6em 0.5em;
+  border:0;
+  margin: 8px 0;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: #eee;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: right 15px top 1em, right 10px top 1em;
+  background-size: 5px 5px, 5px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    input {
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: inherit;
+    }
+}
